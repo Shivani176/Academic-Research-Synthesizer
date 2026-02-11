@@ -205,3 +205,29 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# Secrets
+.env
+
+# Local databases / vector stores
+*.db
+*.sqlite
+chroma/
+chromadb/
+vectorstore/
+vector_store/
+data/
+
+# Outputs / exports
+outputs/
+exports/
+*.bib
+*.log
+
+# Streamlit
+.streamlit/
+
+# OS
+.DS_Store
+Thumbs.db
