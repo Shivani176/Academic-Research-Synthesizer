@@ -18,16 +18,17 @@ This document explains how the Research Assistant is structured, how data flows 
 
 ```mermaid
 flowchart TD
-  UI[Streamlit UI\n(app_ui.py)] --> ROUTER[Query Router + Agent Executor\n(main.py)]
-  ROUTER --> TOOLS[Tool Layer\n(tools.py + synthesis_tools.py)]
-  TOOLS --> MEM[Hybrid Memory\n(memory_manager.py)]
-  MEM --> SQLITE[(SQLite: papers.db)]
-  MEM --> CHROMA[(ChromaDB: embeddings)]
-  MEM --> BM25[BM25 Index]
-  TOOLS --> EXT[External Sources\n(ArXiv / OpenAlex)]
-  TOOLS --> SYN[Synthesis Engine\n(synthesis_engine.py)]
-  TOOLS --> OUT[Output Manager\n(output_manager.py)]
-  OUT --> FS[(Filesystem: exports/)]
+  UI["Streamlit UI<br/>(app_ui.py)"] --> ROUTER["Query Router + Agent Executor<br/>(main.py)"]
+  ROUTER --> TOOLS["Tool Layer<br/>(tools.py + synthesis_tools.py)"]
+  TOOLS --> MEM["Hybrid Memory<br/>(memory_manager.py)"]
+  MEM --> SQLITE["SQLite: papers.db"]
+  MEM --> CHROMA["ChromaDB: embeddings"]
+  MEM --> BM25["BM25 Index"]
+  TOOLS --> EXT["External Sources<br/>(ArXiv / OpenAlex)"]
+  TOOLS --> SYN["Synthesis Engine<br/>(synthesis_engine.py)"]
+  TOOLS --> OUT["Output Manager<br/>(output_manager.py)"]
+  OUT --> FS["Filesystem: exports/"]
+
 ```
 
 ---
