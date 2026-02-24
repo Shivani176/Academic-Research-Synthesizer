@@ -2,7 +2,7 @@
 
 An **interactive research assistant** that helps you **discover, store, and synthesize** academic papers into **structured, citation-backed literature reviews** — with a clean **Streamlit UI**, **hybrid retrieval (BM25 + embeddings)**, and **BibTeX export**.
 
-> Built as a graduate project (M.S. Computer Science). Designed to be **demo-friendly for recruiters**: clear architecture, end-to-end workflow, and reproducible setup.
+> Built as a graduate project (M.S. Computer Science). Designed to be **demo-friendly**: clear architecture, end-to-end workflow, and reproducible setup.
 
 ---
 
