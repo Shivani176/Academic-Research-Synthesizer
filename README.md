@@ -156,6 +156,3 @@ If you’re reviewing this repo, the best entry points are:
 - Add tests for routing + memory + export flows
 
 ---
-
-## License
-Choose a license (MIT is common) and add a `LICENSE` file.
